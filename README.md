@@ -16,7 +16,7 @@ GAN's can also be used with other things, of course, such as music or text.  Ima
 
 What follows will be a quick overview of each individual project I've done.  Each project will have its own folder in this repository, where you can find more detail, source code, and sample outputs.
 
-## CIFAR10 GAN
+## [CIFAR10 GAN](https://github.com/jonDuke/GAN_training/tree/main/CIFAR10)
 
 Starting off simple!  The CIFAR10 dataset was actually meant to be a beginner image classification set.  It consists of thousands of small images of various animals or objects.  The images themselves are only 32x32 pixels each, which means they will be quick to process and also makes this model relatively quick to train.  That said, training the final model still took a few hours on a GPU instance!
 
