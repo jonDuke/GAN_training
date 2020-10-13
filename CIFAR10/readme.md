@@ -4,11 +4,15 @@ This folder contains everything related to the CIFAR10 GAN I explored.  This was
 
 To start with, I followed the tutorial [found here](https://machinelearningmastery.com/how-to-develop-a-generative-adversarial-network-for-a-cifar-10-small-object-photographs-from-scratch/).  Thanks to Jason Brownlee for writing it!
 
+For a more in-depth explanation of the technical bits, and why the GAN was designed how it is, I recommend reading that original tutorial.
+
 ## What is CIFAR10?
 
 [CIFAR-10](https://en.wikipedia.org/wiki/CIFAR-10) is a dataset originally published by the Canadian Institute for Advanced Research (hence CIFAR).  It was meant to be used for computer vision projects, specifically image classification.  It contains 60000 images split among 10 different classes such as planes, trucks, cats, etc.  Those are split 50k/10k into training and test sets.  The images are all very small, only 32x32 pixels, which means any models trained with it can finish relatively quick.
 
-For this project, we didn't care as much what the labels were.  Instead I simply trained a GAN on the images, and once trained it could randomly generate similar ones.
+Here's an example of the images in it: ![CIFAR10 example](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/CIFAR10_example.png?raw=true)
+
+For this project, we didn't care as much what the class labels were.  Instead I simply trained a GAN on the images, and once trained it could randomly generate similar ones.
 
 ## Initial results
 
@@ -26,5 +30,3 @@ I plan to try tweaking some things myself, which will end up in a new notebook h
 
 - There's no reason to leave out the 10k images in the test set.  I can add those in.
 - I think I might also be able to get better results by training only on a single class of image, like cats for example.  This will greatly reduce the number of images to train on, but they will be similar.  Will this work better?
-
-
