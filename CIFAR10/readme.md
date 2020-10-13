@@ -10,15 +10,21 @@ For a more in-depth explanation of the technical bits, and why the GAN was desig
 
 [CIFAR-10](https://en.wikipedia.org/wiki/CIFAR-10) is a dataset originally published by the Canadian Institute for Advanced Research (hence CIFAR).  It was meant to be used for computer vision projects, specifically image classification.  It contains 60000 images split among 10 different classes such as planes, trucks, cats, etc.  Those are split 50k/10k into training and test sets.  The images are all very small, only 32x32 pixels, which means any models trained with it can finish relatively quick.
 
-Here's an example of the images in it: ![CIFAR10 example](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/CIFAR10_example.png?raw=true)
+Here's an example of the images in it:
+
+![CIFAR10 example](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/CIFAR10_example.png?raw=true)
 
 For this project, we didn't care as much what the class labels were.  Instead I simply trained a GAN on the images, and once trained it could randomly generate similar ones.
 
 ## Initial results
 
-Following the turorial, I trained a GAN on the entire 50k training set of images.  Right away, it was able to generate images with distinctive features, even if they were still mostly a jumble of colors.  Here's an example after only 10 training epochs: ![Example after 10 epochs](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e010.png?raw=true)
+Following the turorial, I trained a GAN on the entire 50k training set of images.  Right away, it was able to generate images with distinctive features, even if they were still mostly a jumble of colors.  Here's an example after only 10 training epochs:
 
-Of course I didn't stop there.  After a little over 2 hours of training (200 epochs), I got this output instead: ![Example after 200 epochs](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e200.png?raw=true)
+![Example after 10 epochs](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e010.png?raw=true)
+
+Of course I didn't stop there.  After a little over 2 hours of training (200 epochs), I got this output instead:
+
+![Example after 200 epochs](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e200.png?raw=true)
 
 I know what you're thinking, those images aren't too impressive either.  But they do show a lot of distinct features and you can usually tell what kind of image it was trying to generate.
 
