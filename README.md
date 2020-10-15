@@ -18,6 +18,12 @@ What follows will be a quick overview of each individual project I've done.  Eac
 
 ## [CIFAR10 GAN](https://github.com/jonDuke/GAN_training/tree/main/CIFAR10)
 
-Starting off simple!  The CIFAR10 dataset was actually meant to be a beginner image classification set.  It consists of thousands of small images of various animals or objects.  The images themselves are only 32x32 pixels each, which means they will be quick to process and also makes this model relatively quick to train.  That said, training the final model still took a few hours on a GPU instance!
+Starting off simple!  The CIFAR10 dataset was actually meant to be a beginner image classification set.  It consists of thousands of small images of various animals or objects.  The images themselves are only 32x32 pixels each, which means they will be quick to process and also makes this model relatively quick to train.  (these models took about 2 hours to train, but that's still relatively quick)
 
-:construction: I've just started building this!  More to come soon! :construction:
+As for the results, well at least it was interesting.  In the end, I'd say a 32x32 pixel color picture just doesn't contain enough information for a neural network to learn to make convincing replicas.  You can clearly see the shapes it was trying to make in the final output, but a human can easily tell they aren't real pictures of cars, horses, or anything.  Here's an example of that final output:
+
+![Example output](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e200.png?raw=true)
+
+## Next up
+
+:construction: More to come soon! :construction:
