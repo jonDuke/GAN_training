@@ -26,9 +26,13 @@ Of course I didn't stop there.  After a little over 2 hours of training (200 epo
 
 ![Example after 200 epochs](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e200.png?raw=true)
 
-I know what you're thinking, those images aren't too impressive either.  But they do show a lot of distinct features and you can usually tell what kind of image it was trying to generate.
+I know what you're thinking, those images aren't too impressive either.  But they do show a lot of distinct features and you can usually tell what kind of image it was trying to generate.  The weights for the final trained model are available [here](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Models/generator_model_200.h5) in this folder, in case you want to try loading it yourself.  That'll save you the time of training it.
 
-the weights for the final trained model are available [here](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Models/generator_model_200.h5) in this folder, in case you want to try loading it yourself.  That'll save you the time of training it.
+Now, the tutorial stopped at 200 epochs, but I naturally wondered if training the model longer would give any better results.  So, one last example: here's the model after 500 epochs:
+
+![Example after 500 epochs](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Images/generated_plot_e500.png?raw=true)
+
+Maybe it's getting there?  The pictures are a low enough resolution that it's hard to see much, but just like the 200 epoch example you can see plenty of clear shapes and attempts at making a particular kind of image.  Here's the [weights for that model](https://github.com/jonDuke/GAN_training/blob/main/CIFAR10/Models/generator_model_500.h5) as well.
 
 ## Further exploration
 
