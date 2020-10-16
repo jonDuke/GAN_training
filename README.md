@@ -10,6 +10,8 @@ GAN's are a special type of machine learning that combines multiple other models
 
 ![TensorFlow visual](https://www.tensorflow.org/tutorials/generative/images/gan1.png)
 
+([Image source](https://www.tensorflow.org/tutorials/generative/dcgan))
+
 One of the most more popular ways this has been implemented is with images.  After training a GAN on a set of images, say cats or people, the generator can produce images that look real and yet never actually existed.  You can see this very easily at sites such as [thispersondoesnotexist.com](https://thispersondoesnotexist.com/) or [thiscatdoesnotexist.com](https://thiscatdoesnotexist.com/), both of which use a GAN to generate a completely fake yet (usually) convincing image every time you reload the page.
 
 GAN's can also be used with other things, of course, such as music or text.  Images are a well-explored space so I will be starting my studies on those.
